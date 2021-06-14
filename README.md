@@ -1,0 +1,1 @@
+# crypto_MA_calculation
