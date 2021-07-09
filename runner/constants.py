@@ -1,0 +1,7 @@
+
+
+TICKER_API_URL = 'https://api.coinmarketcap.com/v1/ticker/'
+API_KEY = ""
+API_SECRET = ""
+CRYPTO_SYMBOLS = ["BTCUSDT", "ETHUSDT", "ETCUSDT", "DOGEUSDT", "BNBUSDT", "SHIBUSDT"]
+KLINE_DAYS = 120
