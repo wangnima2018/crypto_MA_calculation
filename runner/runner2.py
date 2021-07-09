@@ -48,7 +48,7 @@ class CryptoUtil(object):
         self.client = Client(API_KEY, API_SECRET)
         self.messages = []
         self.send_email = False
-        self.twilioClient = twilioClient("AC620359aba081d244f64e36b6ebe08e37", "2741f60a17b2ad20baf48716c93bbc5d")
+        self.twilioClient = twilioClient("", "")
 
 
     def get_crypto_current_price(self, symbol):
@@ -131,7 +131,7 @@ class CryptoUtil(object):
     def alert_price_change_via_sms(self):
         coin_value = 0.00003
         if float(self.get_crypto_current_price('SHIBUSDT')) > float(coin_value):
-            self.twilioClient.messages.create(to="+14132301872",
+            self.twilioClient.messages.create(to="+1413",
                                           from_="+16109812328",
                                           body="shiba coin price is greater than {}".format(coin_value))
 

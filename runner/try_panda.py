@@ -14,6 +14,7 @@ data = {'Unemployment_Rate': ['2021-01-19 16:00:00', '2021-01-19 17:00:00', '202
         'Stock_Index_Price': [1500, 1520, 1525]
         }
 
+
 df = pd.DataFrame(data, columns=['Unemployment_Rate', 'Stock_Index_Price'])
 print(df)
 
